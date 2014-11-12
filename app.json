@@ -1,0 +1,14 @@
+{
+  "name": "RVK Calendar Newsletter",
+  "description": "This services uses the RVK Calendar API to fetch events, parses the data and sends you a weekly email",
+  "repository": "https://github.com/optional-is/rvk-calendar-newsletter",
+  "keywords": ["python", "flask", "mandrill", "newsletter"],
+  "website": "",
+  "env": {
+    "TO_EMAIL":          "your_name@example.com",
+    "CATEGORIES":        "",
+    "LANGUAGE":          "en",
+    "MANDRILL_USERNAME": "",
+    "MANDRILL_APIKEY":   "",
+  }
+}
