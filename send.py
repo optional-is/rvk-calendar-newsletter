@@ -6,6 +6,7 @@ import json
 import requests
 from smtplib import SMTP
 import datetime
+import urllib2
 
 if __name__ == "__main__":
 	# Look at the enviornmental variables to check for a receipient email and any categories to filter by
@@ -15,7 +16,13 @@ if __name__ == "__main__":
 		
 		# Fetch RVK Event JSON Data
 		# CURL Request to the JSON endpoint. Pass the language, any category filters and today's date+7 days
-		json_data = json.decode('{}')
+		# Fetch the JSON
+		url="http://newevents.reykjavik.is/find?f=2014-11-21&lang=%s"%lang
+
+		req = urllib2.Request(url)
+		response = urllib2.urlopen(req)
+		ics = json.loads(response.read())
+		
 		
 		# Put the data and the template together
 		message_text = ''
