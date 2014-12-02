@@ -8,7 +8,9 @@
     "TO_EMAIL":          "your_name@example.com",
     "CATEGORIES":        "",
     "LANGUAGE":          "en",
-    "MANDRILL_USERNAME": "",
-    "MANDRILL_APIKEY":   "",
-  }
+  },
+  "addons": [
+    "mandrill",
+    "scheduler"
+  ]
 }
