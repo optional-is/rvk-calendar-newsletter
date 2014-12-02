@@ -7,7 +7,7 @@
   "env": {
     "TO_EMAIL":          "your_name@example.com",
     "CATEGORIES":        "",
-    "LANGUAGE":          "en",
+    "LANGUAGE":          "en"
   },
   "addons": [
     "mandrill",
